@@ -1,19 +1,3 @@
-# loading dataset into 2D matrix
-import csv
-
-def load_data(FILE_PATH: str) -> list[list[float]]:
-  """
-  Loads csv data into a 2D matrix where each row-list represents a single data point
-  """
-  data = []
-  with open(FILE_PATH, 'r') as csvfile:
-    csvreader = csv.reader(csvfile)
-    next(csvreader) # Omit the the first line, i.e., the header
-    for line in csvreader:
-      data.append([float(value) for value in line[1:-1]])
-  
-  return data
-
 def squared_euclid_dis(point1: list[float], point2: list[float])-> float:
   """
   function to calculate squared euclidean distance between two n-dimensional points
@@ -64,23 +48,3 @@ def kmeans(data: list[list[float]], k: int):
     centroids = new_centroids
 
   return centroids, cluster_tags
-
-if __name__ == "__main__":
-  FILE_PATH = "Iris.csv"
-  data = load_data(FILE_PATH)
-
-  k = 3
-  final_centroids, cluster_tags = kmeans(data, k)
-
-  for i in range(k):
-    print(f"Cluster {i+1}")
-    print(f"Centroid is {final_centroids[i]}")
-    print()
-  for i,tag in enumerate(cluster_tags):
-    print(f"datapt {i+1} belongs to Cluster {tag+1}")
-
-
-
-
-
-
