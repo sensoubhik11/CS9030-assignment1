@@ -35,5 +35,5 @@ def visualize_clusters_3d(data: list[list[float]], centroids: list[list[float]],
   ax.set_zlabel('Principal Component 3')  # Label the z-axis
   ax.legend()
 
-  plt.savefig('kmeans_cluster3d_pca.png')
+  plt.savefig('../output/kmeans_cluster3d_pca.png')
   plt.close()
