@@ -1,7 +1,10 @@
 # Clustering Algorithms on the Iris Dataset
 
 Data Mining First Assignment by Prof. Dr. Monalisa Mandal.
-The Final Assignment PDF is [here](https://github.com/sensoubhik11/CS9030-assignment1/blob/master/24MA4108.pdf)
+- The Final Assignment PDF is [here](https://github.com/sensoubhik11/CS9030-assignment1/blob/master/24MA4108.pdf)
+- The Notebook for KMeans Clustering is [here](https://github.com/sensoubhik11/CS9030-assignment1/blob/master/K-Means%20Algorithm.ipynb)
+- The Notebook for DBSCAN Clustering is [here](https://github.com/sensoubhik11/CS9030-assignment1/blob/master/DBSCAN.ipynb)
+- The Notebook for Algomerative Hierarchical Clustering is [here](https://github.com/sensoubhik11/CS9030-assignment1/blob/master/AHC.ipynb)
 
 ## Introduction
 
