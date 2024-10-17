@@ -40,16 +40,6 @@ The dataset used in this project is the Iris dataset, which consists of the foll
 - Petal Width
 - Species (used for reference but not for clustering)
 
-## Requirements
-
-To run this project, you will need the following Python packages:
-
-- numpy
-- pandas
-- matplotlib
-- seaborn
-- scikit-learn
-- scipy
 
 ## Installation
 
@@ -65,7 +55,8 @@ To run this project on your local machine, follow these steps:
 
     ```bash
     python -m venv venv
-    source venv/bin/activate
+    source venv/bin/activate   # for linux
+    .\venv\Scripts\Activate    # for windows
     pip install -r requirements.txt
     ```
 3. Then run jupyer-lab which you can access at localhost:8888
@@ -75,14 +66,14 @@ To run this project on your local machine, follow these steps:
 ## How to Use
 
 ### K-Means Clustering:
-- Open the `KMeans_Clustering.ipynb` file in Jupyter.
-- Run through the notebook to view the code implementation and visualizations.
+- Open the `K-Means Algorithm.ipynb` file in Jupyter.
+- Run through the notebook to view the code implementation and visualizations. *(Press Shift+Enter to execute one cell and go to another cell)*
 
 ### DBSCAN Clustering:
-- Open the `DBSCAN_Clustering.ipynb` notebook.
+- Open the `DBSCAN.ipynb` notebook.
 - Run all the cells from dataset loading to cluster visualization.
 
 ### Agglomerative Hierarchical Clustering (AHC):
-- Open the `AHC_Clustering.ipynb` file.
+- Open the `AHC.ipynb` file.
 - Execute the notebook to view the dendrograms for different linkage methods.
 
